@@ -1,0 +1,248 @@
+/* Common styles for all views */
+* {
+  font-family: 'Vesper Libre', serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 70%;
+  margin: auto;
+  background-color: rgb(183, 179, 179);
+}
+
+.main {
+  background-color: white;
+  height: 180vh;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Toggle Container */
+.toggle-container {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+}
+
+/* Toggle Input */
+.toggle-input {
+  display: none;
+}
+
+/* Toggle Switch */
+.dark-mode-switch {
+  width: 50px;
+  height: 20px;
+  background-color: #312d2d;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Toggle Handle */
+.toggle-handle {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Toggle Switch Checked */
+.toggle-input:checked + .dark-mode-switch .toggle-handle {
+  transform: translateX(30px);
+}
+
+/* Line */
+.line {
+  height: 30px;
+  border: 0.1mm solid blueviolet;
+  margin-left: 40px;
+}
+
+/* Search Bar */
+.search {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search .search-bar {
+  background-color: rgb(229, 229, 229);
+  border: 0;
+  width: 95%;
+  border-radius: 15px;
+  padding: 8px;
+}
+
+.search i {
+  position: absolute;
+  padding: 10px;
+  min-width: 40px;
+  color: blueviolet;
+  margin-left: 60%;
+  transition: 0.4s;
+}
+
+.search i:hover {
+  text-shadow: 0px 0px 10px blueviolet;
+}
+
+/* Heading Styles */
+.heading {
+  font-size: 50px;
+  margin-left: 30px;
+  margin-top: 25px;
+  width: 30%;
+}
+
+.sub-heading {
+  margin-left: 30px;
+  color: blueviolet;
+  margin-top: 5px;
+  width: 30%;
+}
+
+/* Heading Part Styles */
+.heading-part {
+  display: flex;
+}
+
+.heading-part .left {
+  width: 50%;
+}
+
+.heading-part .right {
+  display: flex;
+  width: 50%;
+  justify-content: end;
+  align-items: center;
+  margin-right: 50px;
+}
+
+/* Play Button Styles */
+.play-button {
+  display: flex;
+  height: 60px;
+  width: 60px;
+  background-color: rgba(137, 43, 226, 0.389);
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.play-button:hover {
+  box-shadow: 0px 0px 10px blueviolet;
+}
+
+/* Noun Styles */
+.noun {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.noun .noun-line {
+  height: 1px;
+  width: 90%;
+  border: 1px solid rgb(216, 214, 214);
+  margin-right: 26px;
+  margin-left: 10px;
+}
+
+/* Meaning Styles */
+.meaning {
+  margin-bottom: 30px;
+}
+
+/* Description Styles */
+.discription {
+  margin-left: 60px;
+  margin-right: 10px;
+}
+
+/* Synonym Styles */
+.syno {
+  display: flex;
+  gap: 30px;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+/* Verb Styles */
+.verb {
+  display: flex;
+  margin-top: 30px;
+  padding-top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.verb-line {
+  height: 1px;
+  width: 90%;
+  border: 1px solid rgb(216, 214, 214);
+  margin-right: 26px;
+  margin-left: 10px;
+}
+
+/* Line End Styles */
+.line-end {
+  height: 1px;
+  width: 90%;
+  margin: auto;
+  border: 1px solid rgb(216, 214, 214);
+}
+
+/* Responsive Styles for Tablets */
+@media only screen and (max-width: 768px) {
+  body {
+      width: 80%;
+  }
+
+  .main {
+      height: auto;
+  }
+
+  .heading {
+      font-size: 40px;
+  }
+
+  .sub-heading {
+      width: 50%;
+  }
+}
+
+/* Responsive Styles for Mobiles */
+@media only screen and (max-width: 480px) {
+  body {
+      width: 90%;
+  }
+
+  .heading {
+      font-size: 30px;
+      width: 60%;
+  }
+
+  .sub-heading {
+      width: 60%;
+  }
+
+  .search i {
+      margin-left: 50%;
+  }
+  .syno a{
+    font-size: 12px;
+  }
+}

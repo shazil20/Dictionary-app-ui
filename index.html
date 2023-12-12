@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vesper+Libre&display=swap" rel="stylesheet">
+    <title>Dictionary Web-app</title>
+</head>
+<body>
+    <div class="main">
+        <!-- navbar with bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white pt-4">
+        <div class="container-fluid">
+            <img src="img/logo.png" alt="" style="height: 30px; padding-left: 20px;">
+          
+            <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto ">
+                <li class="nav-item dropdown ms-auto">
+                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                        Serif
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Font-1</a></li>
+                        <li><a class="dropdown-item" href="#">Font-2</a></li>
+                        <li><a class="dropdown-item" href="#">Font-3</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="line"></div>
+            
+            <!-- Dark mode toggle button HTML structure -->
+            <div class="toggle-container">
+                <input type="checkbox" class="toggle-input" id="darkModeToggle">
+                <label class="dark-mode-switch" for="darkModeToggle">
+                    <div class="toggle-handle"></div>
+                </label>
+            </div>
+            <img src="img\moon.png" alt="" style="height: 20px; padding-left: 20px; padding-right: 20px">
+        </div>
+    </nav>
+    <!-- search bar -->
+    <div class="search">
+        <i class="fa-solid fa-magnifying-glass" ></i>
+        <input type="search" class="search-bar" placeholder="Search" >
+    </div>
+    <div class="heading-part">
+        <!-- Keyboard heading -->
+    <div class="left">
+    <div class="heading">keywork</div>
+    <div class="sub-heading">/'ki:bↄ:d/</div>
+    </div>
+    <!-- play button -->
+    <div class="right">
+    <div class="play-button"><img src="img\play button.png" alt="" style="height: 25px;"></div>
+    </div>
+    </div>
+    <div class="noun">
+        <p style="margin-left: 40px; font-weight: bolder; font-size: 20px;"> noun </p>
+        <div class="noun-line"></div>
+    </div>
+    <div class="meaning"><p style="font-size: 18x; color: rgb(156, 156, 156); margin-left: 40px;"> Meaning </p></div>
+    <div class="discription">
+        <ul>
+            <li style="padding-left: 30px; padding-bottom: 10px;">(etc.) A set of keys used to operate a typewriter, computer etc.</li>
+            <li style="padding-left: 30px; padding-bottom: 10px;">A component of many instruments including the piano, organ, and harpsichord <br> consisting of usually black and white keys that cause different tones to be <br> produced when struck.</li>
+            <li style="padding-left: 30px; padding-bottom: 10px;">A device with keys of a musical keyboard, used to control electronic sound- <br> producing devices which may be built into or separate from the keyboard device.</li>
+        </ul>
+    </div>
+    <div class="syno">
+        <p >Synonyms </p>
+        <p style="color: blueviolet;">electronic keyboard</p>
+    </div>
+    <div class="verb">
+        <p style="margin-left: 40px; font-weight: bolder; font-size: 20px;">verb</p>
+        <div class="verb-line"></div>
+    </div>
+    <div class="meaning"><p style="font-size: 18x; color: rgb(156, 156, 156); margin-left: 40px;"> Meaning </p></div>
+    <div class="discription">
+        
+        <ul>
+            <li style="padding-left: 30px; padding-bottom: 10px;">To type on a computer keyboard.</li>
+            </ul>
+            <p style="margin-top: 20px; padding-left: 60px; color: rgb(156, 156, 156);">"Keyboarding is the part of this job I hate the most."</p>
+        </div>
+        
+        <div class="line-end"></div>
+
+        <div class="syno">
+            <p >Source </p>
+            <a href="https://en.wikipedia.org/wiki/Computer_keyboard" style="color: black; margin-right:  60px;">https://en.wikipedia.org/wiki/Computer_keyboard</a>
+        </div>
+
+
+</div>
+    
+
+
+
+
+
+    <!-- script for dark mode -->
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+      
+        darkModeToggle.addEventListener('change', () => {
+          body.classList.toggle('dark-mode', darkModeToggle.checked);
+        });
+      </script>
+      
+</body>
+</html>
